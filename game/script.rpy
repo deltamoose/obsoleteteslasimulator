@@ -35,19 +35,26 @@ label start:
 
     # These display lines of dialogue.
 
-    e "Hello."
+    e "{cps=20}Hello.{/cps=20}"
 
-    e "You may know me as the insanely successful billionare Elon Musk."
+    e "{cps=20}You may know me as the insanely successful {i}billionare{/i} Elon Musk, {/cps=20}"
+
+    e "{cps=20}founder, CEO, and lead designer of {i}SpaceX{/i}; {/cps=20}"
+
+    e "{cps=20}or as the co-founder, CEO, and product architect of {i}Tesla Motors{/i}. {/cps=20}"
+
+    e "{cps=20}But starting today, I'm just your boss.{/cps=20}"
 
     show elon smile at truecenter
 
-    e "But there is much more to who I am than just my money."
+    e "{cps=20}There is much more to who I am than just my money.{/cps=20}"
 
-    e "I think you'll realize that I am much different than the public view."
+    e "{cps=20}For better or worse, {/cps=20}"
+    e "{cps=20}I think you'll realize that I am much different than the public view.{/cps=20}"
 
     show elon what at truecenter
 
-    e "But that's enough about me for now."
+    e "{cps=30}But that's enough about me for now.{/cps=30}"
 
     $ player_name = renpy.input("What is your name?")
 
@@ -57,6 +64,14 @@ label start:
         $ player_name="Space X"
 
     e "Wonderful to meet you, %(player_name)s!"
+
+    e "I hope you enjoy working with me at Tesla."
+
+    show elon flamethrower
+
+    e "It's really fun!"
+
+
 
     #povname = renpy.input(prompt, default='your name', allow=None, exclude='{}', length=None, with_none=None,  pixel_width=None)
 
