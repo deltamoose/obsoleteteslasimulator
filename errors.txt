@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 54: expected statement.
-    povname= renpy.input(prompt, default='your name', allow=None, exclude='{}', length=None, with_none=None,  pixel_width=None)
-           ^
+File "game/script.rpy", line 34: end of line expected.
+    show elon pray.png at truecenter
+                  ^
 
 Ren'Py Version: Ren'Py 7.3.2.320
-Mon Jul 22 22:11:45 2019
+Tue Jul 23 09:50:10 2019
