@@ -27,13 +27,16 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg americana
+    scene newamericana at truecenter
+    with fade
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show elon pray
+    image elon pray = "elon pray.png"
+    show elon pray at truecenter
+    with dissolve
 
     # These display lines of dialogue.
 
@@ -47,14 +50,15 @@ label start:
 
     e "{cps=20}But starting today, I'm just your boss.{/cps=20}"
 
-    show elon smile
+    image elon smile = "elon smile.png"
+    show elon smile at truecenter
 
     e "{cps=20}There is much more to who I am than just my money.{/cps=20}"
 
     e "{cps=20}For better or worse, {/cps=20}"
     e "{cps=20}I think you'll realize that I am much different than the public view.{/cps=20}"
 
-    show elon what
+    show elon what at truecenter
 
     e "{cps=30}But that's enough about me for now.{/cps=30}"
 
@@ -101,6 +105,11 @@ label start:
 
     f "{cps=20}It's really fun!{/cps=20}"
 
+<<<<<<< HEAD
+=======
+    image elon flamethrower = "elon flamethrower.png"
+    show elon flamethrower
+>>>>>>> f51171745d063773c6397b6aacbb1d97a77d619b
 
 
 

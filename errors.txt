@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 54: expected statement.
-    povname= renpy.input(prompt, default='your name', allow=None, exclude='{}', length=None, with_none=None,  pixel_width=None)
-           ^
+File "game/script.rpy", line 108: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/script.rpy", line 109: expected statement.
+    =======
+          ^
+
+File "game/script.rpy", line 112: expected statement.
+    >>>>>>> f51171745d063773c6397b6aacbb1d97a77d619b
+                                                    ^
 
 Ren'Py Version: Ren'Py 7.3.2.320
-Mon Jul 22 22:11:45 2019
+Wed Jul 24 03:07:32 2019
