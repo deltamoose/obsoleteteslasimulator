@@ -105,13 +105,6 @@ label start:
 
     f "{cps=20}It's really fun!{/cps=20}"
 
-<<<<<<< HEAD
-=======
-    image elon flamethrower = "elon flamethrower.png"
-    show elon flamethrower
->>>>>>> f51171745d063773c6397b6aacbb1d97a77d619b
-
-
 
 
     #povname = renpy.input(prompt, default='your name', allow=None, exclude='{}', length=None, with_none=None,  pixel_width=None)
