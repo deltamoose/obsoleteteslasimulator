@@ -5,6 +5,8 @@
 
 define e = Character("Elon")
 
+define f = Character("Henrik")
+
 #define pov = Character("[povname]")
 
 
@@ -60,16 +62,46 @@ label start:
 
     $ player_name = player_name.strip()
 
+    if player_name == "Henrik Fisker" or player_name == "henrik fisker":
+        $ player_name="not henrik"
+        show elon what
+        e "{cps=20}You're not Fisker!{/cps=20}"
+        e "{cps=20}Don't sully your image with our rival's name!{/cps=20}"
+
+    if player_name == "not henrik" or player_name == "Not Henrik" or player_name == "not Henrik":
+        $ player_name="funny one"
+        show elon smile
+        e "{cps=20}You're a funny one!{/cps=20}"
+        e "{cps=20} I think you'll fit in just fine at Tesla!{/cps=20}"
+
     if player_name == "":
         $ player_name="Space X"
 
-    e "Wonderful to meet you, %(player_name)s!"
+    if player_name == "Elon Musk" or player_name == "elon musk":
+        $ player_name="not elon"
+        e "{cps=20}I'm flattered, but I assure you{/cps=20}"
+        show elon smile
+        e "{cps=20}you're not Elon, I am.{/cps=20}"
 
-    e "I hope you enjoy working with me at Tesla."
+    if player_name=="not Elon" or player_name=="not elon" or player_name=="Not Elon":
+        $ player_name="Doppel Ganger"
+        show elon smile
+        e"{cps=20}You're a funny one!{/cps=20}"
+        e"{cps=20}I think you'll fit in just fine at Tesla!{/cps=20}"
 
-    show elon flamethrower
 
-    e "It's really fun!"
+    show elon standing
+
+
+    e "{cps=20}Wonderful to meet you, %(player_name)s!{/cps=20}"
+
+    e "{cps=20}I hope you enjoy working with me at Tesla.{/cps=20}"
+
+    show henrik intimidating
+
+    f "{cps=20}It's really fun!{/cps=20}"
+
+
 
 
 
