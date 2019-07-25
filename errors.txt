@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 108: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/script.rpy", line 109: expected statement.
-    =======
-          ^
-
-File "game/script.rpy", line 112: expected statement.
-    >>>>>>> f51171745d063773c6397b6aacbb1d97a77d619b
-                                                    ^
+File "game/script.rpy", line 133: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Reject Henrik's ridiculous proposal.  You are a loyal Tesla employee!"
+                                                                           ^
 
 Ren'Py Version: Ren'Py 7.3.2.320
-Wed Jul 24 03:16:20 2019
+Thu Jul 25 02:36:26 2019

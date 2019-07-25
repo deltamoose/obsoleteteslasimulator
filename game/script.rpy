@@ -7,6 +7,7 @@ define e = Character("Elon")
 
 define f = Character("Henrik")
 
+
 #define pov = Character("[povname]")
 
 
@@ -27,7 +28,8 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene newamericana at truecenter
+
+    scene bg america at truecenter
     with fade
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -101,9 +103,49 @@ label start:
 
     e "{cps=20}I hope you enjoy working with me at Tesla.{/cps=20}"
 
+    e "{cps=40}Well, see you {i}tomorrow{/i}!{/cps=40}"
+
+
     show henrik intimidating
 
-    f "{cps=20}It's really fun!{/cps=20}"
+    f "{cps=20}I'm glad he's finally gone.{/cps=20}"
+
+    f "{cps=30}'Who am {i}I{/i}?' You ask?{/cps=30}"
+
+    f "{cps=20}That is irrelevant.{/cps=20}"
+
+    f "{cps=30}But I'll tell you what is not irrelevant:{/cps=30}"
+
+    f "{cps=10}{i}Tesla Automotive's highly confidential car blueprints{/i}{/cps=10}"
+
+    f "{cps=20}It's rather simple.{/cps=20}"
+
+    f "{cps=10}You {s}steal{/s} ahem, {i}retrieve{/i} the plans for me and I'll see to it that you never have to work a single day again.{/cps=10}"
+
+    f "{cps=20}Here is my {i}card{/i}.{/cps=20}"
+
+    f "{cps=20}Call me and tell me what you think.{/cps=20}"
+
+    menu:
+        "Accept Henrik's offer immediately":
+            f "{cps=30}I look forward to working with you, %(player_name)s{/cps=30}"
+
+        "Reject Henrik's ridiculous proposal.  You are a loyal Tesla employee!":
+            f "{cps=30} I see...{/cps=30}"
+            f "{cps=30} You are certainly welcome to reconsider.{/cps=30}"
+
+
+    label after_menu:
+
+        "{cps=25}My meeting with Henrik put me on edge, but I steeled myself to face what tommorrow would bring.{/cps=25}"
+        
+
+
+
+
+
+
+
 
 
 
