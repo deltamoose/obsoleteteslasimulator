@@ -7,6 +7,11 @@ define e = Character("Elon")
 
 define f = Character("Henrik")
 
+define r = Character("Robin")
+
+define t = Character("Ted")
+
+
 
 #define pov = Character("[povname]")
 
@@ -29,7 +34,7 @@ label start:
     # images directory to show it.
 
 
-    scene bg america at truecenter
+    scene bg black at truecenter
     with fade
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -122,7 +127,7 @@ label start:
 
     f "{cps=10}You {s}steal{/s} ahem, {i}retrieve{/i} the plans for me and I'll see to it that you never have to work a single day again.{/cps=10}"
 
-    f "{cps=20}Here is my {i}card{/i}.{/cps=20}"
+    f "{cps=20}Here is my card.{/cps=20}"
 
     f "{cps=20}Call me and tell me what you think.{/cps=20}"
 
@@ -137,24 +142,10 @@ label start:
 
     label after_menu:
 
-        "{cps=25}My meeting with Henrik put me on edge, but I steeled myself to face what tommorrow would bring.{/cps=25}"
-        
-
-
-
-
-
-
-
-
+        "{cps=25}Your meeting with Henrik put you on edge, but you steeled yourself to face what tommorrow would bring.{/cps=25}"
 
 
     #povname = renpy.input(prompt, default='your name', allow=None, exclude='{}', length=None, with_none=None,  pixel_width=None)
-
-
-
-
-
 
 
 
