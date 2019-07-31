@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 133: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Reject Henrik's ridiculous proposal.  You are a loyal Tesla employee!"
-                                                                           ^
+File "game/script.rpy", line 40: end of line expected.
+    scene bg americana at truecenter zoom 2
+                                     ^
 
 Ren'Py Version: Ren'Py 7.3.2.320
-Thu Jul 25 02:36:26 2019
+Wed Jul 31 02:15:32 2019

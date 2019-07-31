@@ -11,6 +11,11 @@ define r = Character("Robin")
 
 define t = Character("Ted")
 
+define o = Character("Obama")
+
+define g = Character("Grimes")
+
+define c = Character("Cheeki")
 
 
 #define pov = Character("[povname]")
@@ -32,7 +37,11 @@ label start:
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
+    #scene bg americana at truecenter:
+        #zoom 1.5
+    #show elon wtf at truecenter
 
+    #e "What do you mean you've been working for Fisker this whole time?!"
 
     scene bg black at truecenter
     with fade
@@ -41,8 +50,9 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    image elon pray = "elon pray.png"
-    show elon pray at truecenter
+
+    show elon pray at truecenter:
+        zoom 0.6
     with dissolve
 
     # These display lines of dialogue.
@@ -58,14 +68,16 @@ label start:
     e "{cps=20}But starting today, I'm just your boss.{/cps=20}"
 
     image elon smile = "elon smile.png"
-    show elon smile at truecenter
+    show elon smile at truecenter:
+        zoom 1.2
 
     e "{cps=20}There is much more to who I am than just my money.{/cps=20}"
 
     e "{cps=20}For better or worse, {/cps=20}"
     e "{cps=20}I think you'll realize that I am much different than the public view.{/cps=20}"
 
-    show elon what at truecenter
+    show elon what at truecenter:
+        zoom 0.3
 
     e "{cps=30}But that's enough about me for now.{/cps=30}"
 
@@ -101,7 +113,8 @@ label start:
         e"{cps=20}I think you'll fit in just fine at Tesla!{/cps=20}"
 
 
-    show elon standing
+    show elon stand:
+        zoom 1.1
 
 
     e "{cps=20}Wonderful to meet you, %(player_name)s!{/cps=20}"
@@ -110,8 +123,11 @@ label start:
 
     e "{cps=40}Well, see you {i}tomorrow{/i}!{/cps=40}"
 
+    hide elon stand
 
-    show henrik intimidating
+
+    show henrik peeved at truecenter with dissolve:
+        zoom .85
 
     f "{cps=20}I'm glad he's finally gone.{/cps=20}"
 
@@ -127,25 +143,58 @@ label start:
 
     f "{cps=10}You {s}steal{/s} ahem, {i}retrieve{/i} the plans for me and I'll see to it that you never have to work a single day again.{/cps=10}"
 
-    f "{cps=20}Here is my card.{/cps=20}"
-
-    f "{cps=20}Call me and tell me what you think.{/cps=20}"
-
     menu:
         "Accept Henrik's offer immediately":
+            f "{cps=10}Splendid.{/cps=10}"
+            f "{cps=30}Please take my card.  I will be in contact with you.{/cps=30}"
+            f "{cps=20}Oh, and if anyone feels inclined to ask to whom you were speaking...{/cps=20}"
+            f "{cps=30}You know what to do. {/cps=30}"
             f "{cps=30}I look forward to working with you, %(player_name)s{/cps=30}"
+
 
         "Reject Henrik's ridiculous proposal.  You are a loyal Tesla employee!":
             f "{cps=30} I see...{/cps=30}"
             f "{cps=30} You are certainly welcome to reconsider.{/cps=30}"
+            f "{cps=30} Here is my card. {/cps=30}"
+            f "{cps=30} Call me should you change your mind. {/cps=30}"
+            f "{cps=20} If anyone asks, I was never here. {/cps=20}"
+            f "{cps=10} Good day. {/cps=10}"
+
 
 
     label after_menu:
-
-        "{cps=25}Your meeting with Henrik put you on edge, but you steeled yourself to face what tommorrow would bring.{/cps=25}"
-
-
+        hide henrik peeved
+        "{cps=20} You read the card the mysterious man gave to you.{/cps=20}"
+        "{cps=10} HENRIK FISKER {/cps=10}"
+        "{cps=10} CEO OF FISKER AUTOMOTIVE CO {/cps=10}"
+        "{cps=10} CELL: 818-XXX-XXXX {/cps=10}"
+        "{cps=20} There was something ominous about the man and his lofty title.{/cps=20}"
+        "{cps=20} You brushed off your misgivings about Henrik, and steeled yourself to face what unknowns tommorrow would bring.{/cps=20}"
     #povname = renpy.input(prompt, default='your name', allow=None, exclude='{}', length=None, with_none=None,  pixel_width=None)
+
+    scene bd elonroom at truecenter
+    show elon frown at right with fade:
+        zoom .9
+
+    e "{cps=30} I have a bad feeling about tommorrow... {/cps=30}"
+
+    e "{cps=30}What about you, Cheeki?{/cps=30}"
+
+    show cheeki normal at left with fade:
+        zoom .6
+
+    c "{cps=25}CHIRP!{/cps=25}"
+
+    e "{cps=30}You're right, tommorrow is gonna be just fine.{/cps=30}"
+
+    e "{cps=30}The sinking feeling in my gut must just be the Taco Bell from earlier. {/cps=30}"
+
+    e "{cps=30}Let's go to bed, friend.{/cps=30}"
+
+
+
+
+
 
 
 
