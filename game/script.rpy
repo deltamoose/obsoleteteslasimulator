@@ -125,9 +125,10 @@ label start:
 
     hide elon stand
 
+    scene bg suss with fade
 
     show henrik peeved at truecenter with dissolve:
-        zoom .85
+        zoom 2.2
 
     f "{cps=20}I'm glad he's finally gone.{/cps=20}"
 
@@ -144,7 +145,7 @@ label start:
     f "{cps=10}You {s}steal{/s} ahem, {i}retrieve{/i} the plans for me and I'll see to it that you never have to work a single day again.{/cps=10}"
 
     menu:
-        "Accept Henrik's offer immediately":
+        "Sounds good to me!  I'm all for extra pocket money.":
             f "{cps=10}Splendid.{/cps=10}"
             f "{cps=30}Please take my card.  I will be in contact with you.{/cps=30}"
             f "{cps=20}Oh, and if anyone feels inclined to ask to whom you were speaking...{/cps=20}"
@@ -152,7 +153,7 @@ label start:
             f "{cps=30}I look forward to working with you, %(player_name)s{/cps=30}"
 
 
-        "Reject Henrik's ridiculous proposal.  You are a loyal Tesla employee!":
+        "I am offended that you would even think for a second that I would betray Elon.":
             f "{cps=30} I see...{/cps=30}"
             f "{cps=30} You are certainly welcome to reconsider.{/cps=30}"
             f "{cps=30} Here is my card. {/cps=30}"
@@ -172,16 +173,16 @@ label start:
         "{cps=20} You brushed off your misgivings about Henrik, and steeled yourself to face what unknowns tommorrow would bring.{/cps=20}"
     #povname = renpy.input(prompt, default='your name', allow=None, exclude='{}', length=None, with_none=None,  pixel_width=None)
 
-    scene bd elonroom at truecenter
+    scene bg elonroom at truecenter
     show elon frown at right with fade:
-        zoom .9
+        zoom 1.2
 
     e "{cps=30} I have a bad feeling about tommorrow... {/cps=30}"
 
     e "{cps=30}What about you, Cheeki?{/cps=30}"
 
-    show cheeki normal at left with fade:
-        zoom .6
+    show cheeki normal at top with fade:
+        zoom 1.5
 
     c "{cps=25}CHIRP!{/cps=25}"
 
